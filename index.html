@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name - GitHub Repository</title>
+    <style>
+        :root {
+            --primary-color: #2d3436;
+            --secondary-color: #0984e3;
+            --background-color: #f5f6fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .github-btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 1rem 0;
+            transition: transform 0.2s;
+        }
+
+        .github-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .features {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        code {
+            background-color: #eee;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        .screenshot {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project Name</h1>
+        <p>A brief description of your project</p>
+        <a href="https://github.com/yourusername/yourrepo" class="github-btn">
+            View on GitHub
+        </a>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About</h2>
+            <p>A detailed description of your project. Explain what it does, why it's useful, and any key features.</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Feature 1</h3>
+                    <p>Description of feature 1</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Feature 2</h3>
+                    <p>Description of feature 2</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Feature 3</h3>
+                    <p>Description of feature 3</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation">
+            <h2>Installation</h2>
+            <p>How to install your project:</p>
+            <pre><code>$ git clone https://github.com/yourusername/yourrepo.git
+$ cd yourrepo
+$ npm install</code></pre>
+        </section>
+
+        <section id="usage">
+            <h2>Usage</h2>
+            <p>How to use your project:</p>
+            <pre><code>const example = require('yourproject');
+example.doSomething();</code></pre>
+            <!-- Add screenshot if available -->
+            <!-- <img src="screenshot.png" alt="Project Screenshot" class="screenshot"> -->
+        </section>
+
+        <section id="contributing">
+            <h2>Contributing</h2>
+            <p>We welcome contributions! Please follow these steps:</p>
+            <ol>
+                <li>Fork the repository</li>
+                <li>Create your feature branch</li>
+                <li>Commit your changes</li>
+                <li>Push to the branch</li>
+                <li>Open a pull request</li>
+            </ol>
+        </section>
+
+        <section id="license">
+            <h2>License</h2>
+            <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Project Name. All rights reserved.</p>
+        <a href="https://github.com/yourusername" class="github-btn">
+            Visit My GitHub
+        </a>
+    </footer>
+
+    <script>
+        // Automatically update year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
